@@ -15,14 +15,35 @@
     </p>
 
     <div class="about-img-box">
-      <img
+      <picture>
+        <source
+          srcset="./img/img-about-d.webp 1x, ./img/img-about-d.webp 2x"
+          media="(min-width: 1158px)"
+        />
+        <source
+          srcset="./img/img-about-t.webp 1x, ./img/img-about-t@2x.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./img/img-about-m.webp 1x, ./img/img-about-m@2x.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="portfolio-card-img"
+          src="./img/img-about-m.webp"
+          alt="Yacht"
+          width="1180"
+          height="470"
+        />
+      </picture>
+      <!-- <img
         class="about-img"
         srcset="./img/img-about-m.jpg 1x, ./img/img-about-m@2x.jpg 2x"
         src="./img/img-about-m.jpg"
         alt="YachtJet"
-        width="335"
-        height="395"
-      />
+        width="1180"
+        height="470"
+      /> -->
     </div>
   </div>
 </section>
