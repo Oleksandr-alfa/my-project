@@ -100,10 +100,42 @@ background: #0e1823;
 
 @media screen and (min-width:1280px) {
     .page-about {
-            max-width: 1180pxpx;
+            max-width: 1280px;
             padding: 0 50px;
         }
 
+.page-about .container {
+ display: flex;
+ flex-wrap: wrap;
+ padding-top: 50px;
+
+}
+
+.about-title {
+    padding: 0;
+  margin-left: 50px;
+  margin-right: 189px;
+  margin-bottom: 0;
+
+}
+
+.about-text-big {
+    padding-left: 0;
+    
+    font-size: 23px;
+    width: 354px;
+
+}
+
+.about-text-small {
+    padding-left: 0;
+    font-size: 13px;
+    width: 354px;
+  margin-right: 50px;
+margin-left: auto;
+margin-bottom: 100px;
+
+}
 
 }
 
