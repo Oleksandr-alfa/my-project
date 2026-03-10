@@ -1,110 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/my-project/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/my-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/my-project/assets/styles-DvPDDfy5.css">
+    <title>Command project blended-3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/my-project-blended/assets/index-BNZdeg9K.css">
   </head>
   <body>
-    <header class="header">
+    <header class="page-header">
   <div class="container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/my-project/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
+      <a class="nav-logo" href="./index.html">yachtjet</a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="link" href="#Yachts">Yachts</a>
+        </li>
+        <li class="nav-item">
+          <a class="link" href="#Reviews">Reviews</a>
         </li>
       </ul>
     </nav>
+    <ul class="header-social-list">
+      <li class="social-list-item">
+        <a class="link" href="https://www.instagram.com">
+          <svg class="icon icon-instagram" width="19" height="19">
+            <use href="../img/sprite.svg?v=3#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a class="link" href="https://www.youtube.com">
+          <svg class="icon icon-youtube" width="20" height="20">
+            <use href="../img/sprite.svg?v=3#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list-item">
+        <a class="link" href="https://www.facebook.com">
+          <svg class="icon icon-facebook" width="20" height="20">
+            <use href="../img/sprite.svg?v=3#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="header-burger">
+      <svg class="icon icon-burger" width="28" height="28">
+        <use href="/my-project-blended/assets/sprite-B1vHiQLA.svg?v=3#icon-burger"></use>
+      </svg>
+    </div>
   </div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+
+      <section class="page-hero">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/my-project/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
+    <h1 class="hero-title">
+      Explore the High Seas with Our Luxury Yacht Rentals
     </h1>
+    <p class="hero-text">
+      Experience the freedom and luxury of yachting on the open seas. Choose
+      from our top-of-the-line yachts and embark on an unforgettable journey
+      surrounded by breathtaking views and state-of-the-art amenities.
+    </p>
+    <button class="hero-btn">Yacht rental</button>
   </div>
 </section>
 
-      <article class="badges">
+      <section class="page-about">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+    <h2 class="about-title">
+      YachtJet fleet is here to take you on the ultimate adventure
+    </h2>
+    <p class="about-text-big">
+      From spacious decks to state-of-the-art technology, our yachts are
+      designed to provide the perfect blend of luxury and functionality.
+    </p>
+    <p class="about-text-small">
+      Take a look at our selection below and choose the yacht that matches your
+      needs and preferences.No matter which yacht you choose, our experienced
+      crew will ensure that your journey is smooth and enjoyable. Book now and
+      get ready for an unforgettable adventure on the high seas.
+    </p>
 
+    <div class="about-img-box">
+      <picture>
+        <source
+          srcset="/my-project-blended/assets/img-about-d-ddxPNvlR.webp 1x, /my-project-blended/assets/img-about-d-ddxPNvlR.webp 2x"
+          media="(min-width: 1158px)"
+        />
+        <source
+          srcset="/my-project-blended/assets/img-about-t-DmWcFOps.webp 1x, /my-project-blended/assets/img-about-t@2x-DjxpPU8_.webp 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/my-project-blended/assets/img-about-m-hvFMpdKB.webp 1x, /my-project-blended/assets/img-about-m@2x-B0cciAD9.webp 2x"
+          media="(max-width: 767px)"
+        />
+        <img
+          class="portfolio-card-img"
+          src="/my-project-blended/assets/img-about-m-hvFMpdKB.webp"
+          alt="Yacht"
+          width="1180"
+          height="470"
+        />
+      </picture>
+      <!-- <img
+        class="about-img"
+        srcset="./img/img-about-m.jpg 1x, ./img/img-about-m@2x.jpg 2x"
+        src="./img/img-about-m.jpg"
+        alt="YachtJet"
+        width="1180"
+        height="470"
+      /> -->
+    </div>
+  </div>
+</section>
+
+      
+      
+      
+      
     </main>
 
     <footer class="footer">
@@ -122,7 +157,6 @@
     </p>
   </div>
 </footer>
-
 
   </body>
 </html>
